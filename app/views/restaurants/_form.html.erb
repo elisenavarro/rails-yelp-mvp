@@ -1,0 +1,8 @@
+<!-- PARTIAL VIEW -->
+
+<%= simple_form_for [@restaurant] do |f|  %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category, collection: Restaurant::CATEGORY %>
+  <%= f.submit "Add a Review", class: "btn btn-primary" %>
+<% end %>

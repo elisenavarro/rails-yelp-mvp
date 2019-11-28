@@ -1,0 +1,7 @@
+<h1>Restaurant#show</h1>
+
+<h3><%= @restaurant.name %></h3>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.category %></p>
+<p><%= link_to "Review this Restaurant", new_restaurant_review_path(@restaurant) %></p>
+<%= link_to "Homepage", restaurants_path %>
